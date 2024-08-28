@@ -1,5 +1,5 @@
 import { Button, Card, ListGroup } from "react-bootstrap"
-import MovieModal from "./MovieModal";
+import MovieModalView from "./MovieModalView";
 import { useState } from "react";
 
 
@@ -29,7 +29,7 @@ export default function MovieCard({ movie }) {
                 </ListGroup>
             </Card>
 
-            <MovieModal show={showModal} handleClose={handleClose} movie={movie} />
+            <MovieModalView show={showModal} handleClose={handleClose} movie={movie} />
 
         </>
     )

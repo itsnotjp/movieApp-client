@@ -1,14 +1,19 @@
-import { useEffect, useState } from "react";
+
 import { Row, Col } from "react-bootstrap";
 
 import MovieCard from "./MovieCard";
-import MovieModal from "./MovieModal";
+
 
 export default function ViewMoviesUser({movies}) {
 
     return (
 
         <>
+            <Row>
+                <Col className="my-5 pt-5 text-center mx-auto">
+                    <h1>Movie List</h1>
+                </Col>
+            </Row>
             <Row>
                 {
                     movies.movies && movies.movies.length > 0 ? (
